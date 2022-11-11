@@ -1,0 +1,47 @@
+.section {
+  padding: 50px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  max-width: 60%;
+  font-size: 16px;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.email > svg {
+  margin-right: 10px;
+}
+
+.emailLink {
+  color: black;
+}
+
+@media (max-width: 710px) {
+  
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    max-width: unset;
+  }
+
+  .info {
+    margin-bottom: 20px;
+    display: flex;
+    margin: 0 auto 20px;
+  }
+}
